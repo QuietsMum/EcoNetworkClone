@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="105dp"
+            android:elevation="2dp"
+            android:gravity="bottom"
+            android:background="@drawable/topbar_background"
+            android:orientation="horizontal">
+                <LinearLayout
+                    android:id="@+id/button_events"
+                    android:focusable="false"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/text_events"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:text="@string/events_text_button"
+                        android:textColor="@color/textmainHeader1"
+                        android:textSize="16sp"/>
+                    <View
+                        android:id="@+id/line_events"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginEnd="40dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginBottom="12dp"
+                        android:background="@color/neutral1"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/button_news"
+                    android:focusable="false"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/text_news"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:text="@string/news_header_button"
+                        android:textColor="@color/neutral1"
+                        android:textSize="16sp"/>
+                    <View
+                        android:id="@+id/line_news"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginEnd="40dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginBottom="12dp"
+                        android:visibility="invisible"
+                        android:background="@color/neutral1"/>
+                </LinearLayout>
+        </LinearLayout>
+
+
+
+
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scroll_nest_dash"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_marginTop="4dp"
+                android:id="@+id/tagcontainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:clickable="false"
+               />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/events_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:clickable="false"
+                    />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/news_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="110dp"
+    android:layout_height="wrap_content"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="20dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+      <ImageView
+          android:id="@+id/image_item_main_promo"
+          android:layout_width="match_parent"
+          android:layout_height="140dp"
+          android:layout_gravity="center"
+          android:scaleType="centerCrop"
+          android:src="@drawable/ecopic" />
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#468D94</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#C56B6B</color>
+    <color name="colorHomeCircle">#10C56B6B</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorCircletrans">#7F468D94</color>
+    <color name="colorBluetrans">#F5F5F5</color>
+    <color name="colorWhitetrans50">#70FFFFFF</color>
+    <color name="silver">#C0C0C0</color>
+    <color name="neutral1">#CCCCCC</color>
+    <color name="LightGrey">#fafafa</color>
+    <color name="textmainHeader1">#72969A</color>
+    <color name="textmainHeader2">#426568</color>
+    <color name="maincontent">#7C8E8F</color>
+    <color name="textback">#60004576</color>
+    <color name="layermap">#20FF6347</color>
+    <color name="layermap2">#200000FF</color>
+    <color name="layermap3">#2039FF14</color>
+    <color name="layermap4">#20FFFF00</color>
+    <color name="layermap5">#20800080</color>
+    <color name="back_main">#F5F5F5</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="status_bar_login">#4E939B</color>
+    <color name="status_bar_map">#FFFFFF</color>
+    <color name="light_blue_600">#FF039BE5</color>
+    <color name="light_blue_900">#FF01579B</color>
+    <color name="light_blue_A200">#FF40C4FF</color>
+    <color name="light_blue_A400">#FF00B0FF</color>
+    <color name="black_overlay">#66000000</color>
+</resources>

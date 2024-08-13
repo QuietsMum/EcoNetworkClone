@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="105dp"
+        android:elevation="2dp"
+        android:gravity="bottom"
+        android:background="@drawable/topbar_background"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/button_promo"
+            android:focusable="false"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_events"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text="@string/promo_text"
+                android:textColor="@color/textmainHeader1"
+                android:textSize="16sp"/>
+            <View
+                android:id="@+id/line_promo"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="12dp"
+                android:background="@color/neutral1"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/button_sales"
+            android:focusable="false"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_sales"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text="@string/sales_text"
+                android:textColor="@color/neutral1"
+                android:textSize="16sp"/>
+            <View
+                android:id="@+id/line_sales"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="12dp"
+                android:visibility="invisible"
+                android:background="@color/neutral1"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scroll_nest_shop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_marginTop="4dp"
+                android:id="@+id/promocontainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:clickable="false"
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/sales_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:clickable="false"
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/shop_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

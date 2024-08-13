@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "256466543566",
+    "project_id": "eco-network",
+    "storage_bucket": "eco-network.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:256466543566:android:84c56edeaaedf6bee6c19f",
+        "android_client_info": {
+          "package_name": "com.econetwork"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "256466543566-neptm7pvh760ptus3r21l5q0u0ea5tsi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTXpo34e6Ql7T4DMLRNYwPOCslHXpi77o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "256466543566-neptm7pvh760ptus3r21l5q0u0ea5tsi.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "256466543566-cedqqvi4hr8f1unc26fss19phituhaim.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.eztech.ECO-Network"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
